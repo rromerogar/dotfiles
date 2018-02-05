@@ -1,7 +1,7 @@
 [user]
 	name = Raúl Romero García
-	email = raul@bgta.net
-	signingkey = B491F30D9D9617402D9A0B68F2DDE867E45D91BD
+		email = rromerogar@uoc.edu
+	signingkey = 5861F7B3FE0BD3B62C4CAF45B4BA81804DC8740E
 [push]
 	default = simple
 
@@ -34,6 +34,9 @@
 	dump = cat-file -p
 	graph = log --graph --pretty=oneline --abbrev-commit
 	amend = commit --amend --no-edit
+	gpt = !`git gc && git push --all --recurse-submodules=on-demand && git push --tags --recurse-submodules=on-demand`
+	vlog = !git log --graph --oneline --decorate --date=relative --all
+	oldest-ancestor = !zsh -c 'diff -u <(git rev-list --first-parent \"${1:-master}\") <(git rev-list --first-parent \"${2:-HEAD}\") | sed -ne \"s/^ //p\" | head -1' -
 	
 	# Destroys all tracked and untracked changes
 	fire = "!f() { git reset --hard; git clean -f -d; }; f"
@@ -61,3 +64,5 @@
 [commit]
 	gpgsign = true
 	template = /home/raul/.git_commit_template
+[gpg]
+	program = /usr/local/bin/gpg
