@@ -11,3 +11,7 @@ I'm using the [Fish shell](https://fishshell.com/) and [Fisherman](https://githu
 The [fishfile](https://github.com/bgta/dotfiles/blob/master/fish/fishfile) contains a list of [Fisherman](https://github.com/fisherman/fisherman) plugins that I use.
 
 The [flutter.fish](https://github.com/bgta/dotfiles/blob/develop/fish/flutter.fish) file contains a little fish script to set my [Flutter.io](https://flutter.io/) local installation in my PATH.
+
+### Resources
+
+* [Fish Workarround for Intellij Idea](https://stackoverflow.com/a/46953049)
