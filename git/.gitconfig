@@ -1,7 +1,7 @@
 [user]
 	name = Raúl Romero García
-	email = raul@bgta.net
-	signingkey = B491F30D9D9617402D9A0B68F2DDE867E45D91BD
+	email = rromerogar@uoc.edu
+	signingkey = 5861F7B3FE0BD3B62C4CAF45B4BA81804DC8740E
 [push]
 	default = simple
 
