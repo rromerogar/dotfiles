@@ -1,6 +1,6 @@
 [user]
 	name = Raúl Romero García
-		email = rromerogar@uoc.edu
+	email = rromerogar@uoc.edu
 	signingkey = 5861F7B3FE0BD3B62C4CAF45B4BA81804DC8740E
 [push]
 	default = simple
